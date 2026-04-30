@@ -3,7 +3,10 @@
   padding: 0;
   box-sizing: border-box;
   color: #1a1a1a;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Bebas Neue', sans-serif;
+  justify-content: center;
+
+ 
 }
 
 .navbar {
@@ -60,7 +63,8 @@
 
 .nav-links {
   display: flex;
-  gap: 12px;
+  font-weight: 300;
+  font-size: 1.5 rem;
 }
 
 .nav-links a {
@@ -137,7 +141,7 @@
   }
 
   .logo-container {
-    font-size: 1.35rem;
+    font-size: 2 rem;
   }
 
   .logo {
@@ -187,18 +191,41 @@
 
 /* The Button styling */
 .action-button {
-  display: inline-block; /* Essential for links to respect padding/height */
-  text-decoration: none; /* Removes the underline */
-  padding: 12px 24px;
-  background-color: #007BFF;
-  border-radius: 5px;
-  font-size: 16px;
-  transition: 0.3s;
-}
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.35rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      
+      color: #000;
+      background: transparent;
+      border: 3.5px solid #000;           /* Thick but elegant */
+      padding: 18px 48px;
+      border-radius: 50px;                /* Modern rounded edges */
+      
+      cursor: pointer;
+      transition: all 0.4s ease;
+      outline: none;
+      white-space: nowrap;
+    }
 
-.action-button:hover {
-  background-color: #0056b3;
-}
+    /* Hover Effect */
+    .action-button:hover {
+      background: #000;
+      color: #fff;
+      transform: translateY(-4px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    /* Optional: Different sizes */
+    .action-button-sm {
+      font-size: 1.1rem;
+      padding: 14px 36px;
+    }
+
+    .action-button-lg {
+      font-size: 1.6rem;
+      padding: 22px 56px;
+    }
 
 .social-footer {
   background-color: white; /* Dark background to match your martial arts theme */
