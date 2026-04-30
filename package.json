@@ -1,0 +1,21 @@
+{
+  "name": "budokai-benrath",
+  "version": "1.0.0",
+  "description": "Tran Kampfschule",
+  "keywords": [
+    "basic",
+    "js",
+    "and",
+    "html"
+  ],
+  "license": "UNLICENSED",
+  "author": "Abdallah Elsayed",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "bootstrap": "^5.3.8"
+  }
+}
