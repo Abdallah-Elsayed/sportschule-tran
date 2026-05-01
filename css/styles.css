@@ -38,7 +38,7 @@
 .video-wrapper {
       position: relative;
       width: 100%;
-      max-width: 960px;           /* Adjust max size as needed */
+      max-width: 860px;           /* Adjust max size as needed */
       margin: 0 auto;
       border-radius: 16px;
       overflow: hidden;
