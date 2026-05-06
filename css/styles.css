@@ -44,6 +44,8 @@
       overflow: hidden;
       box-shadow: 0 15px 35px rgba(0, 0, 0, 0.8);
       background: #000;
+      z-index: -1000
+      
     }
 
     .video-wrapper video {
@@ -51,6 +53,7 @@
       height: auto;
       display: block;
       object-fit: contain;        /* Shows the complete video without cropping */
+      z-index: -1000
     }
 
     /* Responsive adjustments */
@@ -174,7 +177,6 @@
 /* Update your existing overlay-content class */
 .overlay-content {
   position: relative; /* Required for z-index to work */
-  z-index: 2;        /* Must be higher than .bg-image's z-index */
   display: flex;
   flex-direction: column; /* Stacks logo on top of button */
   align-items: center;
@@ -447,27 +449,26 @@
 
 .schedule-table-wrapper {
   overflow-x: auto;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
 }
 
 .schedule-table {
   width: 100%;
   border-collapse: collapse;
-  background: wheat;
-  min-width: 900px;
+  min-width: 1000px;
 }
 
 .schedule-table th,
 .schedule-table td {
   padding: 18px 24px;
   text-align: center;
-  border: 1.5px solid #333;
-  font-size: 1.05rem;
+  border: 3px solid #333;
+  font-size: 1.3rem;
 }
 
 .schedule-table th {
-  background: wheat;
-  font-weight: 600;
+ 
+  font-weight: 800;
   top: 0;
 }
 
@@ -475,11 +476,6 @@
 
 }
 
-.schedule-table .bjj { background: rgba(102, 126, 234, 0.18); }
-.schedule-table .kick { background: rgba(231, 76, 60, 0.18); }
-.schedule-table .tkd  { background: rgba(46, 204, 113, 0.18); }
-.schedule-table .open { background: rgba(155, 89, 182, 0.12); }
-.schedule-table .combo { background: rgba(241, 196, 15, 0.12); }
 
 /* Notes */
 .schedule-notes {
