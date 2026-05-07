@@ -1,93 +1,91 @@
 <!doctype html>
 <html lang="de">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    
     <title>SPORTSCHULE-TRAN</title>
     <link rel="stylesheet" href="css/styles.css" />
     <script src="./js/scripts.js" defer></script>
-  </head>
-  <body>
-    <main>
-      <nav class="navbar">
+</head>
+<body>
+    <nav class="navbar">
         <div class="logo-container">
-          <div class="logo"><img src="images/logo_010526.png"></div>
-          <a href="index.html">SPORTSCHULE-TRAN</a>
+            <div class="logo">
+                <img src="images/logo_010526.png" alt="Sportschule Tran Logo">
+            </div>
+            <a href="index.html">SPORTSCHULE-TRAN</a>
         </div>
 
         <div class="nav-links">
-          <a href="about.html">ABOUT</a>
-          <a href="schedule.html">SCHEDULE</a>
-          <a href="membership.html">MEMBERSHIP</a>
-          <a href="contact.html">CONTACT</a>
+            <a href="about.html">ABOUT</a>
+            <a href="schedule.html">SCHEDULE</a>
+            <a href="membership.html">MEMBERSHIP</a>
+            <a href="contact.html">CONTACT</a>
         </div>
 
-
-        <div class="hamburger" id="hamburger">
-          <span></span>
-          <span></span>
-          <span></span>
+        <div class="hamburger" id="hamburger" aria-label="Menü" role="button" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
-      </nav>
+    </nav>
 
-      <!-- Mobile Menu -->
-      <div class="mobile-menu" id="mobileMenu">
-          <a href="about.html">ABOUT</a>
-          <a href="schedule.html">SCHEDULE</a>
-          <a href="membership.html">MEMBERSHIP</a>
-          <a href="contact.html">CONTACT</a>
-      </div>
-      <main class="Home-page"></main>
-      <div class="Main-body">
-        <div class="hero-container">
-          
-          <div class="overlay-content">
-                        <div class="video-wrapper">
-                  <video autoplay muted playsinline>
-                   <source src="images/grok-video-clip.mp4" type="video/mp4">
-                     </video>
-                      </div>
-            
-              <a class="action-button btn-lg" href="contact.html">CONTACT US!</a>
-            
-          </div>
-
-
-        </div>
-      </div>
-    </main>
-<footer class="footer">
-    <div class="footer-content">
-      
-
-      <div class="social-icons">
-        <a href="https://facebook.com/yourpage" target="_blank" aria-label="Facebook">
-          <img src="images/facebook.svg" alt="Facebook" class="social-svg">
-        </a>
-        <a href="https://www.instagram.com/budokai.benrath/" target="_blank" aria-label="Instagram">
-          <img src="images/instagram.svg" alt="Instagram" class="social-svg">
-        </a>
-        <a href="https://youtube.com/yourchannel" target="_blank" aria-label="YouTube">
-          <img src="images/youtube.svg" alt="YouTube" class="social-svg">
-        </a>
-        <a href="mailto:info@firepharaoh.com" aria-label="Email">
-          <img src="images/mail.svg" alt="Email" class="social-svg">
-        </a>
-      </div>
-      <p>
-        © 2026 SPORTSCHULE-TRAN. All rights reserved.
-      </p>
-      <div class="legal-links">
-        <a href="/agb.html" target="_blank">AGB</a>
-        <span class="separator">|</span>
-        <a href="/impressum.html" target="_blank">Impressum</a>
-      </div>
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="about.html">ABOUT</a>
+        <a href="schedule.html">SCHEDULE</a>
+        <a href="membership.html">MEMBERSHIP</a>
+        <a href="contact.html">CONTACT</a>
     </div>
-  </footer>
 
-    <!-- Links your JS file -->
-  </body>
+    <main>
+        <div class="Main-body">
+            <div class="hero-container">
+                
+                <div class="video-wrapper">
+                    <video autoplay muted playsinline>
+                        <source src="images/grok-video-clip.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+
+                <div class="overlay-content">
+                    <a class="action-button btn-lg" href="contact.html">CONTACT US!</a>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="social-icons">
+                <a href="https://facebook.com/yourpage" target="_blank" aria-label="Facebook">
+                    <img src="images/facebook.svg" alt="Facebook" class="social-svg">
+                </a>
+                <a href="https://www.instagram.com/budokai.benrath/" target="_blank" aria-label="Instagram">
+                    <img src="images/instagram.svg" alt="Instagram" class="social-svg">
+                </a>
+                <a href="https://youtube.com/yourchannel" target="_blank" aria-label="YouTube">
+                    <img src="images/youtube.svg" alt="YouTube" class="social-svg">
+                </a>
+                <a href="mailto:info@sportschule-tran.de" aria-label="Email">
+                    <img src="images/mail.svg" alt="Email" class="social-svg">
+                </a>
+            </div>
+            
+            <p>© 2026 SPORTSCHULE-TRAN. All rights reserved.</p>
+            
+            <div class="legal-links">
+                <a href="/agb.html" target="_blank">AGB</a>
+                <span class="separator">|</span>
+                <a href="/impressum.html" target="_blank">Impressum</a>
+            </div>
+        </div>
+    </footer>
+</body>
 </html>
