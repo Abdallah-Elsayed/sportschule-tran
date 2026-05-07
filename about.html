@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Wöchentlicher Trainingsplan der Sportschule Tran - Martial Arts Training in Benrath">
-    <title>Trainingsplan | SPORTSCHULE-TRAN</title>
+    <meta name="description" content="Über uns - Die Sportschule Tran in Benrath / Düsseldorf">
+    
+    <title>Über uns | SPORTSCHULE-TRAN</title>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,7 +13,7 @@
     
     <link rel="stylesheet" href="css/styles.css" />
     <script src="./js/scripts.js" defer></script>
-    <script src="./js/load_table.js" defer></script>
+    <script src="./js/load_about.js" defer></script>
 </head>
 <body>
     <nav class="navbar">
@@ -24,8 +25,8 @@
         </div>
 
         <div class="nav-links">
-            <a href="about.html">ÜBER UNS</a>
-            <a href="schedule.html" class="active">Trainingsplan</a>
+            <a href="about.html" class="active">ÜBER UNS</a>
+            <a href="schedule.html">SCHEDULE</a>
             <a href="membership.html">MEMBERSHIP</a>
             <a href="contact.html">CONTACT</a>
         </div>
@@ -37,41 +38,31 @@
         </div>
     </nav>
 
-    <!-- Mobile Menu -->
     <div class="mobile-menu" id="mobileMenu">
         <a href="about.html">ÜBER UNS</a>
-        <a href="schedule.html">Trainingsplan</a>
+        <a href="schedule.html">SCHEDULE</a>
         <a href="membership.html">MEMBERSHIP</a>
         <a href="contact.html">CONTACT</a>
     </div>
 
-    <main class="schedule-page">
-        <div class="schedule-container">
-            <h1>Weekly Training Schedule</h1>
-
-            <div class="schedule-table-wrapper">
-                <table class="schedule-table" id="scheduletable">
-                    <thead>
-                        <tr>
-                            <th>Uhrzeit</th>
-                            <th>Mittwoch</th>
-                            <th>Donnerstag</th>
-                            <th>Freitag</th>
-                            <th>Sonntag</th>
-                        </tr>
-                    </thead>
-                    <tbody id="tableBody"></tbody>
-                </table>
+    <main class="about-page">
+        
+        <!-- School Section -->
+        <section class="about-school">
+            <div class="container">
+                <h1>Über die Sportschule Tran</h1>
+                <div id="school-text" class="about-text"></div>
             </div>
+        </section>
 
-            <div class="schedule-notes">
-                <h3>Important Notes</h3>
-                <ul>
-                    <li>Please arrive 10 minutes early for warm-up</li>
-                    <!-- Add more notes here -->
-                </ul>
+        <!-- Trainers Section -->
+        <section class="trainers-section">
+            <div class="container">
+                <h2>Unsere Trainer</h2>
+                <div id="trainers-container" class="trainers-grid"></div>
             </div>
-        </div>
+        </section>
+
     </main>
 
     <footer class="footer">

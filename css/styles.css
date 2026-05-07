@@ -552,3 +552,137 @@ h1, h2, h3, .nav-links a, .action-button, .mobile-menu a,
         font-size: 2.4rem;
     }
 }
+
+/* ====================== ABOUT PAGE ====================== */
+.about-page {
+    background: #f8f8f8;
+    padding-bottom: 80px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+
+/* School Section */
+.about-school {
+    padding: 100px 0 80px;
+    background: white;
+}
+
+.about-school h1 {
+    font-size: 3.2rem;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.about-text {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Trainers Section */
+.trainers-section {
+    padding: 80px 0;
+}
+
+.trainers-section h2 {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.trainers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 60px;
+}
+
+.trainer-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.trainer-card:hover {
+    transform: translateY(-10px);
+}
+
+.trainer-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 40px;
+}
+
+.trainer-text {
+    flex: 1;
+}
+
+.trainer-text h3 {
+    font-size: 2.2rem;
+    margin-bottom: 8px;
+}
+
+.trainer-text h4 {
+    font-size: 1.3rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.trainer-image {
+    flex: 1;
+    max-width: 280px;
+}
+
+.trainer-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* ====================== RESPONSIVE ====================== */
+@media (max-width: 768px) {
+    .about-school {
+        padding: 70px 0 50px;
+    }
+    
+    .about-school h1 {
+        font-size: 2.5rem;
+    }
+
+    .trainers-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .trainer-content {
+        flex-direction: column;
+        gap: 25px;
+        padding: 30px;
+        text-align: center;
+    }
+
+    .trainer-image {
+        max-width: 220px;
+        margin: 0 auto;
+    }
+
+    .trainer-text h3 {
+        font-size: 1.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .trainer-content {
+        padding: 25px;
+    }
+}

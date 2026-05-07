@@ -1,38 +1,38 @@
-const tableBody = document.getElementById('tableBody');
+document.addEventListener('DOMContentLoaded', () => {
+    const tableBody = document.getElementById('tableBody');
+    if (!tableBody) return;
 
+    const csvPath = "data/training-schedule.csv";   // Better folder structure
 
-/**
- * Load and populate table from CSV file path
- * @param {string} csvPath - Path to your CSV file
- */
-function loadScheduleFromPath(csvPath) {
     fetch(csvPath)
         .then(response => {
-            if (!response.ok) {
-                throw new Error(`File not found: ${csvPath}`);
-            }
+            if (!response.ok) throw new Error(`Schedule file not found: ${csvPath}`);
             return response.text();
         })
         .then(csvText => {
-            
             populateTable(csvText);
         })
         .catch(error => {
             console.error(error);
-            
-            alert(`Could not load "${csvPath}"\n\nMake sure the file exists and the path is correct.`);
-            
+            tableBody.innerHTML = `
+                <tr>
+                    <td colspan="5" style="text-align:center; padding:60px 20px; color:#e11d48;">
+                        <strong>Trainingsplan konnte nicht geladen werden.</strong><br>
+                        Bitte später nochmal versuchen.
+                    </td>
+                </tr>`;
         });
-}
+});
 
-// Populate the table
 function populateTable(csvText) {
-    const rows = csvText.trim().split('\n');
+    const tableBody = document.getElementById('tableBody');
     tableBody.innerHTML = '';
 
-    for (let i = 0; i < rows.length; i++) {
-        const cells = rows[i].split(',').map(cell => cell.trim());
-        if (cells.length < 5) continue;
+    const rows = csvText.trim().split('\n');
+    
+    rows.forEach(row => {
+        const cells = row.split(',').map(cell => cell.trim());
+        if (cells.length < 5) return;
 
         const tr = document.createElement('tr');
         
@@ -47,7 +47,7 @@ function populateTable(csvText) {
             tr.appendChild(td);
         });
 
-        // Fill empty columns
+        // Fill missing columns
         while (tr.children.length < 5) {
             const td = document.createElement('td');
             td.textContent = '—';
@@ -56,24 +56,5 @@ function populateTable(csvText) {
         }
         
         tableBody.appendChild(tr);
-    }
-
-    if (tableBody.children.length === 0) {
-        tableBody.innerHTML = `<tr><td colspan="5" style="text-align:center; padding:40px; color:#64748b;">
-            No data found in CSV file.
-        </td></tr>`;
-    }
+    });
 }
-
-
-// ======================
-// AUTO LOAD - CHANGE PATH HERE
-// ======================
-window.onload = function() {
-    
-    
-    // ←←← CHANGE THIS TO YOUR CSV PATH
-    const csvPath = "training-schedule.csv";     // Example: 'data/myschedule.csv' or './schedule.csv'
-    
-    loadScheduleFromPath(csvPath);
-};
