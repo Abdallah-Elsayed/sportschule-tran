@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Wöchentlicher Trainingsplan der Sportschule Tran - Martial Arts Training in Benrath">
-    <title>SPORTSCHULE-TRAN</title>
+    <meta name="description" content="Über uns - Die Sportschule Tran in Benrath / Düsseldorf">
+    
+    <title>Neuigkeiten uns | SPORTSCHULE-TRAN</title>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,7 +13,7 @@
     
     <link rel="stylesheet" href="css/styles.css" />
     <script src="./js/scripts.js" defer></script>
-    <script src="./js/load_table.js" defer></script>
+    <script src="./js/load_about.js" defer></script>
 </head>
 <body>
     <nav class="navbar">
@@ -24,9 +25,9 @@
         </div>
 
         <div class="nav-links">
-            <a href="about.html">ÜBER UNS</a>
+            <a href="about.html" >ÜBER UNS</a>
             <a href="schedule.html">Trainingsplan</a>
-            <a href="news.html">NEUIGKEITEN</a>
+            <a href="news.html" class="active">NEUIGKEITEN</a>
             <a href="contact.html">KONTAKT</a>
         </div>
 
@@ -37,36 +38,29 @@
         </div>
     </nav>
 
-    <!-- Mobile Menu -->
     <div class="mobile-menu" id="mobileMenu">
         <a href="about.html">ÜBER UNS</a>
         <a href="schedule.html">Trainingsplan</a>
-        <a href="news.html">NEUIGKEITEN</a>
+        <a href="news.html"class="active">NEUIGKEITEN</a>
         <a href="contact.html">KONTAKT</a>
     </div>
 
-    <main>
-        <div class="Main-body">
-            <div class="hero-container">
-                
-                <div class="video-wrapper">
-                    <video autoplay muted playsinline>
-                        <source src="images/grok-video-clip.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
-
-                <div class="overlay-content">
-                    <a class="action-button btn-lg" href="contact.html">CONTACT US!</a>
-                </div>
-
+    <main class="about-page">
+        
+        <!-- Trainers Section -->
+        <section class="news-section">
+            <div class="container">
+                  
+                    <img src="/images/news/flyers_28072026.jpg" alt="Einlagung_28072026" width=100% height=100%>
+               
             </div>
-        </div>
+        </section>
+
     </main>
 
     <footer class="footer">
         <div class="footer-content">
-            <div class="social-icons">
+            <div class="social-icons">  
                 <a href="https://www.instagram.com/budokai.benrath/" target="_blank" aria-label="Instagram">
                     <img src="images/instagram.svg" alt="Instagram">
                 </a>
@@ -78,9 +72,9 @@
             <p>© 2026 SPORTSCHULE-TRAN. All rights reserved.</p>
             
             <div class="legal-links">
-                <a href="/agb.html" target="_blank">AGB</a>
+                <a href="agb.html">AGB</a>
                 <span class="separator">|</span>
-                <a href="/impressum.html" target="_blank">Impressum</a>
+                <a href="impressum.html">Impressum</a>
             </div>
         </div>
     </footer>
